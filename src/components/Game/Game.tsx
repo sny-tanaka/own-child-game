@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
-import { Character } from '../Character/Character';
-import styles from './style.module.scss';
 
-type Props = {};
+import { Character } from 'src/components/Character/Character';
+
+import styles from './style.module.scss';
 
 type CharacterType = {
   filename: string;
@@ -23,7 +23,7 @@ const CHARACTER_LIST = [
   'kokinchan',
 ];
 
-export const Game = ({}: Props) => {
+export const Game = () => {
   const [characters, setCharacters] = useState<CharacterType[]>([]);
   const [availableCharacters, setAvailableCharacters] = useState(CHARACTER_LIST);
 
