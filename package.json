@@ -1,7 +1,7 @@
 {
   "name": "app",
   "version": "0.1.0",
-  "homepage": "/digimon-time-stranger-evolutions",
+  "homepage": "/own-child-game",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.14.0",
