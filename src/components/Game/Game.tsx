@@ -4,7 +4,6 @@ import styles from './style.module.scss';
 
 import { Character } from '@/components/Character/Character';
 
-
 type CharacterType = {
   filename: string;
   top: number;
@@ -49,20 +48,21 @@ export const Game = () => {
   }, [characters, availableCharacters]);
 
   // BGM再生
-  useEffect(() => {
-    const audio = new Audio('/own-child-game/musics/anpanman_march.mp3');
-    audio.loop = true;
-    audio.play().catch((error) => {
-      console.error('BGMの再生に失敗しました:', error);
-    });
-    return () => {
-      audio.pause();
-      audio.currentTime = 0;
-    };
-  }, []);
+  //   useEffect(() => {
+  //     const audio = new Audio('/own-child-game/musics/anpanman_march.mp3');
+  //     audio.loop = true;
+  //     audio.play().catch((error) => {
+  //       console.error('BGMの再生に失敗しました:', error);
+  //     });
+  //     return () => {
+  //       audio.pause();
+  //       audio.currentTime = 0;
+  //     };
+  //   }, []);
 
   return (
     <div className={styles.container}>
+      <div className={styles.touch}>TOUCH!</div>
       {characters.map((char, index) => (
         <Character
           key={index}

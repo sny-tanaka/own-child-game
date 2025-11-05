@@ -7,12 +7,19 @@ type Props = {
 export const Start = ({ onStart }: Props) => {
   return (
     <div className={styles.container}>
-      <button
-        onClick={onStart}
-        className={styles.button}
-      >
-        Play
-      </button>
+      <img
+        src="/own-child-game/logo512.png"
+        alt="logo"
+        className={styles.img}
+      />
+      <div className={styles.buttonContainer}>
+        <button
+          onClick={onStart}
+          className={styles.button}
+        >
+          Play!
+        </button>
+      </div>
     </div>
   );
 };
