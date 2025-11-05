@@ -10,6 +10,7 @@ type CharacterType = {
   left: number;
 };
 
+const POP_INTERVAL = 1000;
 const TOP_THRESHOLD = 75;
 const LEFT_THRESHOLD = 60;
 const MAX_CHARACTERS = 5;
@@ -42,7 +43,7 @@ export const Game = () => {
       const filename = availableCharacters[Math.floor(Math.random() * availableCharacters.length)];
       setAvailableCharacters((prev) => prev.filter((name) => name !== filename));
       setCharacters((prev) => [...prev, { filename, top, left }]);
-    }, 2000);
+    }, POP_INTERVAL);
 
     return () => clearInterval(interval);
   }, [characters, availableCharacters]);
