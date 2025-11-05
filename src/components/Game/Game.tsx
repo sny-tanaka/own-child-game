@@ -1,8 +1,9 @@
 import { useEffect, useState } from 'react';
 
-import { Character } from 'src/components/Character/Character';
-
 import styles from './style.module.scss';
+
+import { Character } from '@/components/Character/Character';
+
 
 type CharacterType = {
   filename: string;

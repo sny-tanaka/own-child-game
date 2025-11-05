@@ -1,0 +1,12 @@
+{
+  "files": {
+    "main.css": "/own-child-game/static/css/main.2f15fb30.css",
+    "main.js": "/own-child-game/static/js/main.97c72ec6.js",
+    "static/js/27.57bd240e.chunk.js": "/own-child-game/static/js/27.57bd240e.chunk.js",
+    "index.html": "/own-child-game/index.html"
+  },
+  "entrypoints": [
+    "static/css/main.2f15fb30.css",
+    "static/js/main.97c72ec6.js"
+  ]
+}
