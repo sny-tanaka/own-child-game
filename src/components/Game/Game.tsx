@@ -48,17 +48,17 @@ export const Game = () => {
   }, [characters, availableCharacters]);
 
   // BGM再生
-  //   useEffect(() => {
-  //     const audio = new Audio('/own-child-game/musics/anpanman_march.mp3');
-  //     audio.loop = true;
-  //     audio.play().catch((error) => {
-  //       console.error('BGMの再生に失敗しました:', error);
-  //     });
-  //     return () => {
-  //       audio.pause();
-  //       audio.currentTime = 0;
-  //     };
-  //   }, []);
+  useEffect(() => {
+    const audio = new Audio('/own-child-game/musics/anpanman_march.mp3');
+    audio.loop = true;
+    audio.play().catch((error) => {
+      console.error('BGMの再生に失敗しました:', error);
+    });
+    return () => {
+      audio.pause();
+      audio.currentTime = 0;
+    };
+  }, []);
 
   return (
     <div className={styles.container}>

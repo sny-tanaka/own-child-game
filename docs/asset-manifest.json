@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.css": "/own-child-game/static/css/main.2f15fb30.css",
-    "main.js": "/own-child-game/static/js/main.97c72ec6.js",
+    "main.css": "/own-child-game/static/css/main.8911b4c9.css",
+    "main.js": "/own-child-game/static/js/main.51a80399.js",
     "static/js/27.57bd240e.chunk.js": "/own-child-game/static/js/27.57bd240e.chunk.js",
     "index.html": "/own-child-game/index.html"
   },
   "entrypoints": [
-    "static/css/main.2f15fb30.css",
-    "static/js/main.97c72ec6.js"
+    "static/css/main.8911b4c9.css",
+    "static/js/main.51a80399.js"
   ]
 }
