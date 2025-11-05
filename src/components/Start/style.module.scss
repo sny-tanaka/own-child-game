@@ -1,0 +1,19 @@
+@use '@/variables' as var;
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.button {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  border: none;
+  background-color: var.$red;
+  color: var.$white;
+  font-size: 24px;
+  box-shadow: 2px 2px 2px var.$black;
+}
