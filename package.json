@@ -1,0 +1,81 @@
+{
+  "name": "app",
+  "version": "0.1.0",
+  "homepage": "/digimon-time-stranger-evolutions",
+  "private": true,
+  "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@mui/material": "^7.3.4",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^27.5.2",
+    "@types/node": "^16.18.61",
+    "@types/react": "^18.2.37",
+    "@types/react-dom": "^18.2.15",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.48.2",
+    "react-router-dom": "^6.19.0",
+    "react-scripts": "5.0.1",
+    "typescript": "^4.9.5",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "tsc --project tsconfig.local.json && DISABLE_ESLINT_PLUGIN=true react-app-rewired start",
+    "build": "GENERATE_SOURCEMAP=false react-app-rewired build && rm -r docs && mv build/ docs/",
+    "test": "react-app-rewired test --coverage --collectCoverageFrom=src/logics/** --no-cache --watchAll=false",
+    "eject": "react-app-rewired eject",
+    "lint": "eslint .",
+    "fix": "eslint . --fix",
+    "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx}\"",
+    "format:check": "prettier --check \"src/**/*.{js,jsx,ts,tsx}\"",
+    "lint-staged": "lint-staged",
+    "prepare": "husky install",
+    "preinstall": "bash ./check-node-version.sh"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@typescript-eslint/eslint-plugin": "^6.11.0",
+    "@typescript-eslint/parser": "^6.11.0",
+    "babel-plugin-named-exports-order": "^0.0.2",
+    "eslint": "^8.54.0",
+    "eslint-plugin-import": "^2.29.0",
+    "eslint-plugin-no-relative-import-paths": "^1.5.3",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-unused-imports": "^3.0.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^15.1.0",
+    "plop": "^4.0.0",
+    "prettier": "^3.1.0",
+    "prettier-plugin-organize-imports": "^3.2.4",
+    "prop-types": "^15.8.1",
+    "react-app-rewired": "^2.2.1",
+    "sass": "^1.69.5",
+    "webpack": "^5.89.0"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "prettier --write"
+    ]
+  }
+}
