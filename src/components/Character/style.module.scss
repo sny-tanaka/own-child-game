@@ -1,26 +1,39 @@
 @use '@/variables' as var;
 
+.container {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .character {
   max-width: 200px;
   max-height: 200px;
-  position: absolute;
   
-  // 点から広がるアニメーション
+  // 点から広がって、3秒後に点に戻るアニメーション
   opacity: 0;
   transform: scale(0);
-  animation: expandFromPoint 0.6s ease-out forwards;
+  animation: expandAndShrink 3s ease-out forwards;
 }
 
-@keyframes expandFromPoint {
+@keyframes expandAndShrink {
   0% {
     opacity: 0;
     transform: scale(0);
   }
-  50% {
-    opacity: 1;
-  }
-  100% {
+  16.67% {
     opacity: 1;
     transform: scale(1);
+  }
+  83.33% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0);
   }
 }
